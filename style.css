@@ -8,6 +8,10 @@
   --border-light: #ddd;
 }
 
+* {
+  list-style-type: none;
+}
+
 body {
   margin: 0;
   font-family: "Inter", "Segoe UI", Roboto, sans-serif;
@@ -492,7 +496,6 @@ body.light-mode .login-content input {
   background-color: rgba(255, 255, 255, 0.1);
 }
 
-/* === Адаптивність === */
 @media (max-width: 1199px) {
   header.header {
     padding: 1rem 1.5rem;
@@ -506,15 +509,7 @@ body.light-mode .login-content input {
     width: 260px;
   }
 }
-
-@media (max-width: 991px) {
-  header.header {
-    padding: 1rem 1.2rem;
-    flex-wrap: wrap;
-    gap: 1rem;
-  }
-
-  .header__left {
+.header__left {
     width: 100%;
   }
 
@@ -544,15 +539,7 @@ body.light-mode .login-content input {
     width: 40px;
     height: 40px;
   }
-}
 
-@media (max-width: 767px) {
-  header.header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.8rem;
-    padding: 1rem;
-  }
 
   .header__left {
     width: 100%;
@@ -593,7 +580,13 @@ body.light-mode .login-content input {
     width: 36px;
     height: 36px;
   }
-}
+@media (max-width: 767px) {
+  header.header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.8rem;
+    padding: 1rem;
+  }
 
 @media (max-width: 480px) {
   header.header {
@@ -622,15 +615,7 @@ body.light-mode .login-content input {
     height: 34px;
   }
 }
-
-@media (max-width: 768px) {
-  .header {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.8rem;
-    margin-left: 0;
-    padding: 1rem 1.2rem;
-  }
+}
 
   .header__right {
     width: 100%;
@@ -640,5 +625,5 @@ body.light-mode .login-content input {
   .search-container input {
     width: 100%;
   }
-}
+
 /* Header зроблений */
