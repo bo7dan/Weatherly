@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="header" role="banner">
+  <div class="header__left">
+    <h1 class="header__greeting">Доброго ранку</h1>
+    <p class="header__username">Привіт, Користувач</p>
+  </div>
+
+<nav>
+     <div class="header__right">
+  <div class="search-box">
+ <img src="images/flowbite_search-outline.svg" alt="Пошук" class="search-icon">   
+    <input type="text" placeholder="Знайдіть своє місцезнаходження" class="search-input" required>
+  </div>
+
+ <div class="header__right">
+    <div class="theme-toggle">
+      <input type="checkbox" id="theme-switch">
+      <label for="theme-switch" class="glass-button">
+        <span class="moon"><img src="images/light_icon.png" alt="Світлий фон" width="35" height="35" ></span>
+        <span class="sun"><img src="images/night_icon.png" alt="Темний фон" width="30" height="30"></span>
+      </label>
+    </div>
+
+    <div class="profile-menu">
+      <button class="profile-btn" aria-label="Профіль користувача">
+        <img 
+          src="images/logo_user.png" 
+          alt="Профіль користувача фото" 
+          class="user-avatar" 
+          width="40" 
+          height="40">
+      </button>
+      <ul class="dropdown" id="profile-dropdown" hidden>
+        <li><button id="login-btn">Увійти в акаунт</button></li>
+        <li><button id="logout-btn">Вийти з акаунту</button></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+</header>
+<!-- Header зроблений--> 
+
+<script src="script.js"></script>
+</body>
+</html>
+
+
+
